@@ -1,0 +1,574 @@
+* {
+    font-family: sans-serif;
+}
+input {
+    outline: none;
+    height: 50px;
+    width: 200px;
+}
+body {
+    background-color: rgb(214, 214, 214);
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+li .switch {
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.modeBtn {
+    cursor: pointer;
+}
+.circle {
+    width: 50%;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.comment {
+    transition: .5s ease;
+}
+
+.top-nav ul li:last-child {
+    position: relative;
+}
+.top-nav nav ul li:last-child span{
+    background-color: red;
+    color: wheat;
+    width: 15px;
+    font-family: sans-serif;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    left: 95%;
+    top: -4%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes changePosition {
+    from {
+        margin-left: 20;
+    }
+    to {
+        margin-left: 22px;
+    }
+}
+.logo {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav nav ul{
+    display: flex;
+}
+.top-nav ul li a {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#popular-posts h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main {
+    margin-top: 20px;
+}
+.post {
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.post p {
+    font-size: 14px;
+}
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.user-details{
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+.post-details p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.post-image {
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgb(225, 225, 225);
+    margin-bottom: 10px;
+}
+.post-btn button {
+    width: 32.23%;
+    margin: 0px;
+    padding: 0px;
+}
+.post-btn button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: .5s ease-in-out;
+}
+.post-btn {
+    margin-bottom: 10px;
+}
+.additional-details {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    margin-bottom: 10px;
+}
+.post-btn button:hover {
+    filter: invert(1);
+    transition: .3s ease;
+}
+.liked {
+    filter: invert(1);
+}
+.post {
+    position: relative;
+}
+.comment[id] {
+    color: grey;
+    display: none;
+    animation: fadeIn .5s ease-in-out;
+}
+footer {
+    text-align: center;
+    font-family: sans-serif;
+}
+.liked-persons {
+    position: absolute;
+    background-color: rgb(227, 223, 223);
+    border-radius: 3;
+    top: 96%;
+    padding: 10px;
+    width: 200px;
+    z-index: 2;
+    box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.53);
+    display: none;
+    animation: fadeIn .5s ease-in-out;
+}
+.liked-persons ul li {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.replies {
+    margin-top: 10px;
+}
+.replies .comment-writer {
+    margin-left: 20px;
+}
+.comment-writer {
+    margin-bottom: 10px;
+}
+.comment-material span {
+    font-weight: bold;
+    margin-left: 5px;
+}
+.comment-material span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.comment-material p {
+    margin-left: 20px;
+}
+.comment-writer {
+    font-weight: bold;
+}
+.reply {
+    margin-left: 40px;
+}
+.additional-details :last-child:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.add-comment {
+    margin-top: 10px;
+}
+.add-comment input{
+    height: 10px;
+    width: 98%;
+    animation: increaseSize .7s ease-in-out;
+    outline: none;
+    padding: 5px;
+}
+
+#post-something {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.posting-details textarea {
+    resize: none;
+    width: 99%;
+    outline: none;
+    font-family: sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.posting-details input[type="text"]{
+    width: 99%;
+    outline: none;
+}
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    width: 10%;
+    background: white;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+#post-something :last-child {
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    transition: .5s ease;
+}
+#post-something h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#post-something :last-child:hover {
+    filter: invert(1);
+    transition: .5s ease;
+}
+
+.custom-file-upload:hover {
+    filter: invert(1);
+    transition: .5s ease;
+}
+
+/*********** USER-LIST ************/
+
+.user {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.user button, .form input [type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    background: white;
+    transition: .5s ease;
+}
+
+.user button:hover,
+.form input[type="submit"]:hover {
+    filter: invert(1);
+}
+.user h1 {
+    font-size: 30px;
+}
+.user-list ul li {
+    margin-top: 20px;
+}
+
+
+/*************** LOGIN ***************/
+
+.login {
+    background-color: white;
+    display: flex;
+    width: 80%;
+}
+.form,
+.form label,
+.form label input {
+    width: 100%;
+}
+.form label {
+    background-color: grey;
+}
+label p {
+    margin: 10px 0px 10px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+label input {
+    height: 20px;
+    margin-bottom: 10px;
+}
+.form label:nth-child(3) input{
+    margin-bottom: 25px;
+}
+.form label:last-child button {
+    display: none;
+}
+.form h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+.form input {
+    border: 1px solid grey;
+    transition: .5s ease-in;
+}
+.form input:hover {
+    border: 1px solid black;
+}
+.form input[type="submit"] {
+    background-color: white;
+    border: 1px solid grey;
+    width: 100.8%;
+    transition: .5s ease-in-out;
+}
+
+#login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log-in {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/************ USER DETAIL PAGE ***********/
+
+.user-link {
+    text-decoration: none;
+    color: black;
+}
+.user-link:hover {
+    text-decoration: underline;
+}
+#user-details {
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+.user-image {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    right: 32.63%;
+    top: -40px;
+    border-radius: 50%;
+    background-size: cover;
+    filter: none;
+}
+
+.user-image:hover .image-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: none;
+}
+
+.detail-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.details {
+    width: 60%;
+}
+
+.option-lists nav ul {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+#search {
+    width: 99%;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#search::placeholder {
+    opacity: 0.6;
+}
+
+.option-lists nav ul li {
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    width: 100%;
+}
+.option-lists nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+.option-lists nav ul li a:hover, .active {
+    background-color: grey;
+    width: 100%;
+    color: white !important;
+}
+
+.image-upload-label {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.image-overlay {
+    background-color: rgb(128, 128, 128, 0.5);
+    height: inherit;
+    cursor: pointer;
+    width: inherit;
+    border-radius: inherit;
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+.image-upload {
+    display: none;
+}
+
+.work {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.details {
+    padding: 20px;
+}
+.work h1, .work h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.work p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.work p i {
+    cursor: pointer;
+}
+.edit {
+    display: none;
+}
+.label p {
+    font-weight: normal;
+}
+.work h1 {
+    font-weight: bold;
+}
+.display-none {
+    display: none;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes increaseSize {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        width: 98%;
+        opacity: 1;
+    }
+}  
+#all-sections {
+    padding: 10px;
+}
+.section {
+    margin-bottom: 25px;
+}
+input[type='submit'] {
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile-pic img {
+    border-radius: 50px;
+    margin: 30px 15px;
+}
+.profile-pic {
+    display: flex;
+    justify-content: space-around;
+}
+.user-info {
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+.user-detail {
+    font-family: sans-serif;
+    line-height: 25px;
+    text-align: center;
+}
+.self-post {
+    margin: 20px;
+}
+
